@@ -102,7 +102,7 @@ A subscription “testSubscription” can be configured to use the Events format
 
 ``` syntax
 @rem required to set the DeliveryMaxItems or DeliveryMaxLatencyTime
-Wecutil ss “testSubscription” /cf:Events
+Wecutil ss "testSubscription" /cf:Events
 ```
 
 ### How frequently are WEF events delivered?
@@ -123,11 +123,11 @@ The primary difference is in the latency which events are sent from the client. 
 
 ``` syntax
 @rem required to set the DeliveryMaxItems or DeliveryMaxLatencyTime
-Wecutil ss “SubscriptionNameGoesHere” /cm:Custom
+Wecutil ss "SubscriptionNameGoesHere" /cm:Custom
 @rem set DeliveryMaxItems to 1 event
-Wecutil ss “SubscriptionNameGoesHere” /dmi:1
+Wecutil ss "SubscriptionNameGoesHere" /dmi:1
 @rem set DeliveryMaxLatencyTime to 10 ms
-Wecutil ss “SubscriptionNameGoesHere” /dmlt:10
+Wecutil ss "SubscriptionNameGoesHere" /dmlt:10
 ```
 ### How do I control which devices have access to a WEF Subscription?
 
